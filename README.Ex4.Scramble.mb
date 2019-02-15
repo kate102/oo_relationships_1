@@ -1,0 +1,23 @@
+## Polymorphism - Polymorphism is the ability of an object to take on many forms. 
+[www.tutorialspoint.com/java/java_polymorphosm.htm]
+
+I found this exercise quite challenging at first.
+I could see how to extract the reverse and unreverse functionality
+and I chose to make one depenant on the other as the code is the same 
+and they are by nature, related.
+I still have concerns that un-reverse is suborinate to reverse as they are 
+equivalent functions, but the introduction of a parent class to hold such limited 
+functionality, seems over kill.
+
+The extracting the scrambling and unscrambling functionality was initially more complex
+I decided that these two should also be linked so if there was a 
+change in the coding of the text (scrambling in this case) then this should be tightly coupled
+to the decoding of the text, as with the reversing.
+
+I decided to have a parent class Scramble, that had a default "+" operator
+and a subordinate child who had a "-" operator.
+Again I am uncomfortable with the superior/subordinate class structure but have rejected 
+an additional and alternative parent class at the stage.
+
+
+
